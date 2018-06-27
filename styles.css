@@ -1,4 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Titan+One');
 body{
     margin:0;
     padding: 0;
+}
+
+header{
+    padding: 5%;
+    color: rgb(18, 132, 177);
+    font-family:'Titan One', cursive;
+    text-align: center;
+}
+
+dl{
+    border: 2px dashed #1b76dd;
+    padding: 3% 5%;
+}
+
+dl p{
+    font-size: 30px;
+    font-weight: 900;
 }
