@@ -11,6 +11,13 @@ header{
     text-align: center;
 }
 
+h2, img{
+    display: inline-block;
+}
+img{
+    height: 150px;
+}
+
 dl{
     border: 2px dashed #1b76dd;
     padding: 3% 5%;
