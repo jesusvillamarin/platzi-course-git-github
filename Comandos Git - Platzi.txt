@@ -133,4 +133,9 @@
 #   git checkout -b nueva_rama
 
 
+// Hacer merge entre ramas (Primero debo moverme a la rama que quiero mezclarle los cambios)
+#   git merge <rama que tiene cambios aprobados>
+    ---> git checkout master
+    ----> git merge alterna
+    
 
