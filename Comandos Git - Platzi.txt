@@ -110,6 +110,27 @@
     ---> git rest --hard 3eab11e (Borrar todo apartir de un commit en especifico hasta el commit mas reciente )
 
 // Crear ramas de un repositorio 
-# git branch <nombre de la rama>
+#   git branch <nombre de la rama>
 
 // Listar las ramas de nuestro proyecto
+#   git branch -l 
+
+//Eliminar una rama 
+#   git branch -d <nombre rama>
+
+// Eliminar una rama forzosamente
+#   git branch -D <nombre de la rama>
+
+// Renombrar una rama 
+#   git branch -m <rama a renombrar> <renombre>
+
+// Para movernos/cambiarnos entre ramas
+#   git checkout <sha-1>
+#   git checkout <tag version>
+#   git checkout <nombre de la rama>
+
+// Crear una rama y movernos directamente a ella
+#   git checkout -b nueva_rama
+
+
+
