@@ -140,3 +140,10 @@
     ----> git merge alterna
     
 
+// Reescribir historial del proyecto
+#   git rebase <rama a reescribir>
+    --> git rebase -i <rama> (Hacerlo de forma interactiva)
+
+// Cuando no se esta seguro de realizar un commit (Guardarlo temporalmente fuera del repositorio)
+// Guardarlo en el limbo (stash)
+#   git stash 
