@@ -134,8 +134,27 @@
 
 
 // Hacer merge entre ramas (Primero debo moverme a la rama que quiero mezclarle los cambios)
+
 #   git merge <rama que tiene cambios aprobados>
     ---> git checkout master
     ----> git merge alterna
     
 
+// Reescribir historial del proyecto
+#   git rebase <rama a reescribir>
+    --> git rebase -i <rama> (Hacerlo de forma interactiva)
+
+// Cuando no se esta seguro de realizar un commit (Guardarlo temporalmente fuera del repositorio)
+// Guardarlo en el limbo (stash)
+#   git stash 
+
+// Ver lista de stash's que tengo guardada 
+#   git stash list
+
+// Continuar con alguna modificación que esta en stash 
+#   git stash pop|apply stash@{nro stash}
+    ---> git stash pop stashstash@{1}
+
+// Eliminar un stash que ya no servira por x's razón
+#   git stash drop stash@{nro stash}
+    ---> git stash drop stash@{1}
