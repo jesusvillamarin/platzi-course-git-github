@@ -105,7 +105,40 @@
 #   git reset --mixed <sha-1> (Sacar los cambios realizados del commit y del staged, pasandolo al working directory)
     ---> git reset --mixed 3eab11e
 
+<<<<<<< HEAD
 #   git reset --hard <sha-1>
     ---> git rest --hard 3eab11e
 
 //
+=======
+#   git reset --hard <sha-1> (Borrar absolutamente todo del proyecto que este ya sea en staged o commit)
+    --> git rest --hard (Borra todo lo que este en el staged)
+    ---> git rest --hard 3eab11e (Borrar todo apartir de un commit en especifico hasta el commit mas reciente )
+
+// Crear ramas de un repositorio 
+#   git branch <nombre de la rama>
+
+// Listar las ramas de nuestro proyecto
+#   git branch -l 
+
+//Eliminar una rama 
+#   git branch -d <nombre rama>
+
+// Eliminar una rama forzosamente
+#   git branch -D <nombre de la rama>
+
+// Renombrar una rama 
+#   git branch -m <rama a renombrar> <renombre>
+
+// Para movernos/cambiarnos entre ramas
+#   git checkout <sha-1>
+#   git checkout <tag version>
+#   git checkout <nombre de la rama>
+
+// Crear una rama y movernos directamente a ella
+#   git checkout -b nueva_rama
+
+
+// Hacer merge entre ramas (Primero debo moverme a la rama que quiero mezclarle los cambios)
+
+>>>>>>> alterna
