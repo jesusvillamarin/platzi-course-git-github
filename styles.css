@@ -26,14 +26,14 @@ img {
 
 article {
     margin: 3% 0;
-    border: 10px groove chartreuse;
+    border: 5px groove chartreuse;
     padding: 3% 5%;
     border-radius: 10%;
     max-width: 30%;
 }
 
 article h2 {
-    font-weight: 900;
+    font-weight: bold;
     font-size: 30px;
     color: tomato;
     background: -webkit-linear-gradient(#04a6e6, #0f4380);
