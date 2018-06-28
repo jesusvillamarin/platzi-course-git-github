@@ -147,3 +147,6 @@
 // Cuando no se esta seguro de realizar un commit (Guardarlo temporalmente fuera del repositorio)
 // Guardarlo en el limbo (stash)
 #   git stash 
+
+// Ver lista de stash's que tengo guardada 
+#   git stash list
