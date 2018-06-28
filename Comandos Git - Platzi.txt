@@ -1,0 +1,111 @@
+// Todos los comandos los posibles con git
+#    git
+
+// Verla versión de git 
+#    git --version
+
+// Configuración actual de git
+#   git config --list
+
+//Configuraciones Básicas ---------<>
+//Para trabajar en git necesitamos configurar nuestro e-mail y nombre
+#   git config --global user.email zs15023503@estudiantes.uv.mx
+#   git config --global user.name "Villamarín Jesús"
+// NOTA:global para que afecte todos los repositorios de nuestra pc
+
+// Configurar los colores dentro de git
+#   git config --global color.ui true
+
+// Configurar VSCode como editor por defecto para git
+#   git config --global core.editor "code --wait"
+#   git config --global -e
+
+//--------- Comandos útiles de la terminal------ 
+#   cd --> para movernos entre directorios 
+#   mkdir --> crear directorios 
+#   ls --> listar los archivos de un directorios
+#   rm --> Eliminar un archivo o directorio (-rf)
+#   touch --> Crear archivos 
+#   clear --> "Limpiar pantalla"
+
+// Crear repositorios 
+#   git init  ó  git init proyecto (Creara un repositorio llamado proyecto)
+
+// Ver el estado de nuestros archivos en el repositorio
+#   git status
+        --> Untracked files (archivos color rojo) son nuevos archivos que estan en el working directory
+        --> Changes to be committed (archivos color verde) archivos que han sido modificados y estan listos para hacerle un commit
+
+// Colocar un archivo en el estado Staged
+#   git add <file> 
+    --> git add index.html 
+    --> git add . ( el "." sería todos los archivos de ese directorio)
+
+// Sacar un archivo del estado staged
+#   git rm --cached <file>
+    --> git rm --cached index.html
+    --> git rm -r --cached .
+
+// Eliminar un archivo tanto del staged como del working directory
+#   git rm -F <file>
+    --> git rm -F archivo.txt
+
+// Hacer commits/ Pasarlo al repositorio
+#   git commit <file> -m "Se agrego al repositorio"
+    --> git commit . -m "Se agregan al repositorio todos los archivos"
+    --> git commit index.html -m "Se agrego al repositorio el archivo index.html"
+
+// Concatenar un nuevo cambio con un cambio previo
+# git add archivo
+# git commit -m "Mismo cambio solo que agregamos el archivo faltante" --amend
+
+// Deshacer modificaciones de un archivo 
+#   git checkout -- file 
+    --> git checkout -- index.html
+
+// Ver el registro de commits registrados 
+#   git log
+#   git log --oneline (en una sola linea)
+#   git log --oneline --graph (Grafico de como va avanzando el proyecto, es mas util cuando hayan ramas y mezclas)
+#   git log -2 (Ver commit enumerado, el 1 siempre va ser el ultimo commit hecho)
+
+// Versionar / etiquetar  un proyecto -- Git Tags
+    --> existen dos tipos
+        Lightweight -- ligeras (Versión que vamos a etiquetar)
+        annotated -- anotadass
+        
+#   git tag 1.0 ----> ligeras
+#   git tag -a 1.0 -m "Versión estable del proyecto" ---> anotada
+
+// Listar las versiones del proyecto
+#   git tag -l 
+
+// Eliminar una versión del proyecto
+#   git tag -d <version>
+    --> git tag -d 1.0
+
+// Renombrar versión o etiqueta del proyecto
+#   git tag -f -a <version> -m "mensaje de la version" <sha>
+    --> git log --oneline -> copiamos el commit que deseamos etiquetar (3eab11e)
+    --> git tag -f -a 0.4 -m "Renombramos la versión 0.8 a la versión 0.5 y seguido copiamos el sha obtenido" 3eab11e
+
+
+// Ver que cambios se han hecho con los commits en el proyecto 
+#   git diff <sha-1> ó git diff <ultimo sha> <antepenultimo sha> ó git diff <tag v1> <tag v2>
+    --> git diff 2463cff
+    ---> git diff 2463cff 3eab11e
+    ---> git diff 0.5 1.0
+
+    
+// Deshacer un commit en el que haya un bug, etc... Al realizar esto, todo vuelve al estado staged
+    --- Existen 3 tipos de reset principales y que hacen cosas diferentes
+#   git reset --soft <sha -1> (Para deshacer las modifiicaciones hechas desde un commit hasta el ultimo)
+    ---> git reset --soft 3eab11e
+
+#   git reset --mixed <sha-1> (Sacar los cambios realizados del commit y del staged, pasandolo al working directory)
+    ---> git reset --mixed 3eab11e
+
+#   git reset --hard <sha-1>
+    ---> git rest --hard 3eab11e
+
+//
