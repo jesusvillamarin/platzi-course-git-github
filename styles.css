@@ -1,29 +1,56 @@
-@import url('https://fonts.googleapis.com/css?family=Titan+One');
-body{
-    margin:0;
+@import url('https://fonts.googleapis.com/css?family=Titan+One|Galada|Cookie');
+body {
+    margin: 0;
     padding: 0;
 }
 
-header{
+header {
     padding: 5%;
     color: rgb(18, 132, 177);
-    font-family:'Titan One', cursive;
+    font-family: 'Titan One', cursive;
     text-align: center;
 }
 
-h2, img{
+h2,
+img {
     display: inline-block;
 }
-img{
+section>h2{
+    font-family: 'Galada', cursive;
+}
+
+img {
     height: 150px;
 }
 
-dl{
-    border: 2px dashed #1b76dd;
+article {
+    margin: 3% 0;
+    border: 10px groove chartreuse;
     padding: 3% 5%;
+    border-radius: 10%;
 }
 
-dl p{
+article h2 {
+    font-weight: 900;
+    font-size: 30px;
+    color:tomato;
+    background: -webkit-linear-gradient(#04a6e6,#0f4380);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+dl p {
     font-size: 30px;
     font-weight: 900;
+}
+
+
+ul li {
+    list-style: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+h2 span{
+    text-decoration:underline;
+    text-decoration-color:chartreuse;
 }
