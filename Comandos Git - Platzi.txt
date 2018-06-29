@@ -215,7 +215,15 @@
         --> git push origin alterna
 
 // Ignorar archivos que tengan claves de BD o login's
----> .gitignore
+---> creamos el archivo .gitignore en nuestro proyecto
+        ->> touch .gitignore
+
+---> abrimos el archivo y agregamos el nombre del archivo que no queramos que se haga push
+    ->> conexionDB.js
+---> configuraciones de gitignore dependiendo del proyecto node|Django|python...
+#   https://www.gitignore.io
+
+---> hacemos git add . luego git commit -m "Agregando el archivo .gitignore" y listo
 
 
         
