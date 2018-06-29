@@ -188,4 +188,16 @@
 // Es necesario traer primero los archivos del repositorio github a nuestro repositorio local
 // para asi luego hacer un merge 
 #   git fetch <nombre del repositorio agg> <rama que deseamos traer>
-#   git fetch origin master
+        -->git fetch origin master
+
+// Mezclar los repositorios
+#   git merge origin/master
+
+// En caso de que haya un error por commits que tengamos en el local tendremos que colocar lo siguiente
+#   git merge origin/master --allow-unrelated-histories
+
+
+// Hacer fetch y merge en un solo paso
+#   git pull <nombre del repositorio remoto> <rama que queremos>
+        --->git pull origin master
+        --->git pull miorigin master
