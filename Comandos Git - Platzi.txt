@@ -162,3 +162,53 @@
 // Escoger un commit especifico para mezclarlo con otra rama de forma urgente
 #   git cherry-pick <sha-1>
 
+// Clonar un repositorio de github
+#   git clone <URL repositorio> 
+    --> git clone https://github.com/jesusvillamarin/platzi-course-git-github.git
+
+// Crear llaves publicas SSH con git
+#   ssh-keygen -t rsa -b 4096 -C "Correo electronico"
+        ---> ssh-keygen -t rsa -b 4096 -C "zs15023503@estudiantes.uv.mx"
+
+// Agregar un repositorio de github a nuestro proyecto para poder hacer push
+#   git remote add <Nombre para el repo|normalmente es origin> <URL repositorio>
+        ---> git remote add origin https://github.com/jesusvillamarin/platzi-course-git-github.git
+        ---> git remote add miorigin https://github.com/jesusvillamarin/platzi-course-git-github.git
+
+
+// Ver lista de conexiones existentes a repositorios
+#   git remote -v
+
+// Eliminar conexión de un repositorio
+#   git remote remove <nombre del repo>
+        ---> git remote remove origin
+        ---> git remote remove miorigin
+
+// Mezclar los archivos que estan en el repositorio remoto [GitHub]
+// Es necesario traer primero los archivos del repositorio github a nuestro repositorio local
+// para asi luego hacer un merge 
+#   git fetch <nombre del repositorio agg> <rama que deseamos traer>
+        -->git fetch origin master
+
+// Mezclar los repositorios
+#   git merge origin/master
+
+// En caso de que haya un error por commits que tengamos en el local tendremos que colocar lo siguiente
+#   git merge origin/master --allow-unrelated-histories
+
+
+// Hacer fetch y merge en un solo paso
+#   git pull <nombre del repositorio remoto> <rama que queremos>
+        --->git pull origin master
+        --->git pull miorigin master
+
+// Haciendo push a nuestro repositorio remoto para asi almacenarlo fuera del equipo local
+#   git push origin master
+        --->git push miorigin master
+
+// Hacer push de nuestros tags (versiones del proyecto) al repositorio remoto
+#   git push origin master --tags
+
+// Hacer push de las ramas creadas de nuestro proyecto
+#   git push origin <otra rama>
+        --> git push origin alterna
