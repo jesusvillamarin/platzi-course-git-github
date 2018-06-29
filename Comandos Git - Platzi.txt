@@ -205,3 +205,11 @@
 // Haciendo push a nuestro repositorio remoto para asi almacenarlo fuera del equipo local
 #   git push origin master
         --->git push miorigin master
+
+// Hacer push y con nuestros tags (versiones del proyecto) al repositorio remoto
+#   git push origin master --tags
+
+// Hacer push de las ramas creadas de nuestro proyecto
+#   git push origin <otra rama>
+        --> git push origin alterna
+
