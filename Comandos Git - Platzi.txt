@@ -201,3 +201,7 @@
 #   git pull <nombre del repositorio remoto> <rama que queremos>
         --->git pull origin master
         --->git pull miorigin master
+
+// Haciendo push a nuestro repositorio remoto para asi almacenarlo fuera del equipo local
+#   git push origin master
+        --->git push miorigin master
