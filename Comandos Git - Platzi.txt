@@ -162,3 +162,30 @@
 // Escoger un commit especifico para mezclarlo con otra rama de forma urgente
 #   git cherry-pick <sha-1>
 
+// Clonar un repositorio de github
+#   git clone <URL repositorio> 
+    --> git clone https://github.com/jesusvillamarin/platzi-course-git-github.git
+
+// Crear llaves publicas SSH con git
+#   ssh-keygen -t rsa -b 4096 -C "Correo electronico"
+        ---> ssh-keygen -t rsa -b 4096 -C "zs15023503@estudiantes.uv.mx"
+
+// Agregar un repositorio de github a nuestro proyecto para poder hacer push
+#   git remote add <Nombre para el repo|normalmente es origin> <URL repositorio>
+        ---> git remote add origin https://github.com/jesusvillamarin/platzi-course-git-github.git
+        ---> git remote add miorigin https://github.com/jesusvillamarin/platzi-course-git-github.git
+
+
+// Ver lista de conexiones existentes a repositorios
+#   git remote -v
+
+// Eliminar conexión de un repositorio
+#   git remote remove <nombre del repo>
+        ---> git remote remove origin
+        ---> git remote remove miorigin
+
+// Mezclar los archivos que estan en el repositorio remoto [GitHub]
+// Es necesario traer primero los archivos del repositorio github a nuestro repositorio local
+// para asi luego hacer un merge 
+#   git fetch <nombre del repositorio agg> <rama que deseamos traer>
+#   git fetch origin master
