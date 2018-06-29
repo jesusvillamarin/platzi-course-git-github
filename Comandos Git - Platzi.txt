@@ -213,3 +213,5 @@
 #   git push origin <otra rama>
         --> git push origin alterna
 
+#Serian la mayoria de los comandos de git, los principales
+
