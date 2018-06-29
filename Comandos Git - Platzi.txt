@@ -158,3 +158,6 @@
 // Eliminar un stash que ya no servira por x's razón
 #   git stash drop stash@{nro stash}
     ---> git stash drop stash@{1}
+
+// Escoger un commit especifico para mezclarlo con otra rama de forma urgente
+#   git cherry-pick <sha-1>
