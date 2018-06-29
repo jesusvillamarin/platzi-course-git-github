@@ -4,12 +4,12 @@
         Quien lo debe revisar?
 
 # Es de alto valor?
-  -[ ] Si
-  -[ ] No
+  - [ ] Si
+  - [ ] No
   
 
 #Nivel de urgencia
-   -[ ] 10 -- Alto
-   -[ ] 50 -- Medio 
-   -[ ] 25 -- Bajo
-   -[ ] 10 -- No pasarlo por alto
+   - [ ] 10 -- Alto
+   - [ ] 50 -- Medio 
+   - [ ] 25 -- Bajo
+   - [ ] 10 -- No pasarlo por alto
