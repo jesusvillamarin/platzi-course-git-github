@@ -1,4 +1,4 @@
-// Todos los comandos los posibles con git
+﻿// Todos los comandos los posibles con git
 #    git
 
 // Verla versión de git 
@@ -80,9 +80,14 @@
 // Listar las versiones del proyecto
 #   git tag -l 
 
-// Eliminar una versión del proyecto
+// Eliminar una versión del proyecto en el repositorio local
 #   git tag -d <version>
     --> git tag -d 1.0
+
+// Eliminar una version del proyecto en el repositorio remoto
+#    git push --delete origin <version>
+     --> git push --delete origin 1.0
+
 
 // Renombrar versión o etiqueta del proyecto
 #   git tag -f -a <version> -m "mensaje de la version" <sha>
